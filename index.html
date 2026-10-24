@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contentix – Web & Sadržaj</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="top"></div>
+
+    <header>
+        <h1><span id="logo-tekst">CONTENTIX</span></h1>
+        <p><em>Kreiramo sadržaj, webove i reklame za privatnike i male biznise.</em></p>
+    </header>
+
+    <main>
+        <section class="usluge">
+            <h2>Naše usluge</h2>
+            <ul>
+                <li><strong>Web dizajn</strong> – moderna, responzivna i prilagođena web rješenja.</li>
+                <li><strong>Reklame</strong> – video, vizuali i oglasi za društvene mreže.</li>
+                <li><strong>Copywriting</strong> – pisanje sadržaja koji prodaje.</li>
+            </ul>
+        </section>
+
+        <div class="sekcije">
+            <section class="proces">
+                <h2>Proces rada</h2>
+                <ol>
+                    <li>Analiza potreba klijenta</li>
+                    <li>Izrada prijedloga dizajna</li>
+                    <li>Razvoj i testiranje</li>
+                    <li>Lansiranje i podrška</li>
+                </ol>
+            </section>
+
+            <section class="onama">
+                <h2>O nama</h2>
+
+                <picture>
+                    <img src="logo.png" alt="Naš tim" class="slika-onama">
+                </picture>
+
+                <p>Naš tim kombinira <em>kreativnost</em> i <strong>tehničko znanje</strong> kako bi stvorio sadržaj
+                    koji <span class="naglaseno">privlači pažnju</span> i donosi rezultate.
+                </p>
+                <p>Iskustvo: više od 5<sup>+</sup> godina u industriji, s preko 100<sub>+</sub><a href="projekti.html" class="link-projekti">uspješnih projekata</a></p>
+            </section>
+        </div>
+
+        <section class="tablica">
+            <h2>Pregled usluga i cijena</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Usluga</th>
+                        <th colspan="2">Cijena (EUR)</th>
+                        <th rowspan="2">Trajanje</th>
+                    </tr>
+                    <tr>
+                        <th>Osnovni paket</th>
+                        <th>Premium paket</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web dizajn</td>
+                        <td>400</td>
+                        <td>800</td>
+                        <td>7 dana</td>
+                    </tr>
+                    <tr>
+                        <td>Reklame</td>
+                        <td>150</td>
+                        <td>350</td>
+                        <td>3 dana</td>
+                    </tr>
+                    <tr>
+                        <td>Copywriting</td>
+                        <td>100</td>
+                        <td>250</td>
+                        <td>2 dana</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="mapa">
+            <h2>Lokacija ureda</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.6001695647738!2d16.028072922228915!3d45.804265946047714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d62b435df41f%3A0x33cdf045c7f9623c!2sGrafi%C4%8Dki%20fakultet!5e0!3m2!1shr!2shr!4v1764925603702!5m2!1shr!2shr"
+                width="100%" height="300" style="border:0;" loading="lazy">
+            </iframe>
+        </section>
+
+       <section class="pdf">
+            <h2>Opća pravila (PDF)</h2>
+            <br><br>
+            <object data="pravilnik.pdf" type="application/pdf" width="100%" height="400">
+                <p>
+                    Vaš preglednik ne može prikazati PDF.
+                    <a href="pravilnik.pdf" download>Kliknite ovdje za preuzimanje.</a>
+                </p>
+            </object>
+        </section>
+
+
+        <section class="kontakt">
+            <h2>Kontaktirajte nas</h2>
+            <form action="hvala.html" method="get">
+                <fieldset>
+                    <legend>Pošaljite upit</legend>
+
+                    <label for="ime">Ime i prezime:</label>
+                    <input type="text" id="ime" name="ime" placeholder="vaše ime i prezime" required>
+
+                    <label for="email">Email adresa:</label>
+                    <input type="email" id="email" name="email" placeholder="primjer@email.com" required>
+
+                    <label for="usluga">Odaberite uslugu:</label>
+                    <select id="usluga" name="usluga">
+                        <option value="">-- Odaberite --</option>
+                        <option value="web">Web dizajn</option>
+                        <option value="reklame">Reklame</option>
+                        <option value="copywriting">Copywriting</option>
+                    </select>
+
+                    <label for="grad">Grad:</label>
+                    <input list="gradovi" id="grad" name="grad" placeholder="upišite grad">
+                    <datalist id="gradovi">
+                        <option value="Zagreb">
+                        <option value="Split">
+                        <option value="Rijeka">
+                        <option value="Osijek">
+                        <option value="Zadar">
+                        <option value="Slavonski Brod">
+                        <option value="Pula">
+                        <option value="Karlovac">
+                        <option value="Varaždin">
+                        <option value="Šibenik">
+                    </datalist>
+
+                    <label for="poruka">Poruka:</label>
+                    <input type="text" id="poruka" name="poruka" placeholder="kratka poruka">
+
+                    <button type="submit" class="posalji-btn">Pošalji</button>
+                </fieldset>
+            </form>
+        </section>
+        <a href="#top" class="back-to-top">Vrati se na vrh ↑</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Contentix | Sva prava pridržana.</p>
+    </footer>
+
+</body>
+</html>
